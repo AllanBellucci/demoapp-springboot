@@ -13,16 +13,15 @@ import br.com.application.demoapp.repositories.OrderRepository;
 public class OrderServices {
 
 	@Autowired
-	private OrderRepository userRepository;
+	private OrderRepository repository;
 
 	public List<Order> findAll() {
-		return userRepository.findAll();
+		return repository.findAll();
 	}
-	
+
 	public Order findById(Long id) {
-		Optional<Order> user = userRepository.findById(id);
-		return user.get();
+		Optional<Order> obj = repository.findById(id);
+		return obj.get();
 	}
-	
 
 }
