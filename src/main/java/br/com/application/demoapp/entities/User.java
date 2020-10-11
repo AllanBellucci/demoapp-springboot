@@ -34,25 +34,21 @@ public class User implements Serializable {
 
 	}
 
-	
-
 	/**
 	 * @param id
 	 * @param name
 	 * @param phone
 	 * @param email
 	 * @param password
-	 * @param orders
-	 */
-	public User(Long id, String name, String phone, String email, String password, List<Order> orders) {
+	  */
+	public User(Long id, String name, String phone, String email, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
 		this.email = email;
 		this.password = password;
-		this.orders = orders;
-	}
+		}
 
 
 
